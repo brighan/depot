@@ -17,5 +17,5 @@ Product.create(title: 'Seven Mobile Apps in seven weeks',
     Because a native app is built for use on a particular device and its OS, it has the ability to use device-specific hardware and software. Native apps can provide optimized performance and take advantage of the latest technology, such as a GPS, compared to web apps or mobile cloud apps developed to be generic across multiple systems.
     </p>
   },
-  image_url: '7apps.jpg'
+  image_url: '7apps.jpg',
   price: 26.00)
