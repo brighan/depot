@@ -11,6 +11,7 @@ class Product < ApplicationRecord
     unless line_items.empty?
       errors.add(:base, 'line Items present')
       throw :abort
+    end
   end
 
   validates :title, :description, :image_url, presence: true
@@ -19,7 +20,6 @@ class Product < ApplicationRecord
   validates :title, length: {maximum: 80, message: 'cannot exceed 80 chars'}
   validates :image_url, allow_blank: true, format: {
     with: %r{\.(gif|png|jpg)\Z}i,
-    message: 'must be a URL for .gif, .png or .jpg image'
-  }
+    message: 'must be a URL for .gif, .png or .jpg image'}
 
 end
